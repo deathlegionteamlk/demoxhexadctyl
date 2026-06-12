@@ -1,0 +1,19 @@
+services:
+  panel:
+    build:
+      context: ./panel
+    ports:
+      - "8000:80"
+    environment:
+      - APP_NAME=demoxhexadctyl
+      - APP_ENV=local
+    volumes:
+      - ./panel:/var/www/html
+
+  daemon:
+    build:
+      context: ./daemon
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - "8080:8080"
