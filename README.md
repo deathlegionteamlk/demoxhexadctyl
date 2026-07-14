@@ -30,3 +30,7 @@ The node agent located in the `daemon/` directory.
 
 ## License
 MIT - Death Legion Team
+
+<!-- DL Code Badge -->
+![Status](https://img.shields.io/badge/status-active-success?style=flat-square)
+
